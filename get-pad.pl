@@ -91,7 +91,7 @@ while ( $target = shift @pads ) {
 
 	$content =~ s/^\s*\*\s*\\item/\\item/smg;
 
-	open(OUT,'>',$dir.'/'.$as.'.tex') or die "Failed to open $as.tex";
+	open(OUT,'>',$dir.'/'.$as.'.txt') or die "Failed to open $as.txt";
 	print OUT $content;
 	close(OUT);
 
